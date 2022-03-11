@@ -2,6 +2,8 @@
 
 Congruent will airdrop bribe to `MetaM` holders who has `sGaas`, `wsGaas`, `Gaas` on Ethereum.
 
+## [Find your Address](output/bribe.md)
+
 ## Usage
 
 To generate merkle tree for claiming:
