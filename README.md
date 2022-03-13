@@ -2,6 +2,8 @@
 
 Congruent will airdrop bribe to `MetaM` holders who has `sGaas`, `wsGaas`, `Gaas` on Ethereum.
 
+The Airdrop will happen on BSC.
+
 ## [Find your Address](output/bribe.md)
 
 ## Usage

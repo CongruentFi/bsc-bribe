@@ -2,10 +2,7 @@ import { readFileSync, writeFileSync } from "fs";
 import { BytesLike, ethers } from "ethers";
 import { keccak256, parseUnits, solidityKeccak256 } from "ethers/lib/utils";
 import { MerkleTree } from "merkletreejs";
-
-// remove multisig from total supply
-const metamTotalSupply = parseUnits("595170.937195", "gwei").sub(parseUnits("134927.522259159", "gwei"));
-const totalBribe = parseUnits("42499", "6");
+import { metamTotalSupply, totalBribe } from "./common";
 
 const ethSha3 = (data: BytesLike) => {
   return keccak256(data).slice(2);
