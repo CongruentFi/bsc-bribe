@@ -26,10 +26,10 @@ function main() {
   } = JSON.parse(readFileSync(`output/list.json`).toString());
   const keys = Object.keys(data);
   md = md.replace("%0", String(keys.length))
-    .replace("%1", formatUnits(totalBribe, "6"))
+    .replace("%1", formatUnits(totalBribe))
     .replace("%2", formatUnits(metamTotalSupply, "gwei"));
   for (let addr of keys) {
-    md += `|${addr}|${formatUnits(data[addr].usdc, "6")}|\n`;
+    md += `|${addr}|${formatUnits(data[addr].usdc)}|\n`;
   }
   writeFileSync(`output/bribe.md`, md);
 }
